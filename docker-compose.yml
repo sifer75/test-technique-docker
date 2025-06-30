@@ -17,12 +17,20 @@ services:
       context: ./Test-Technique-backend
     depends_on:
       - opensearch-node
+    environment:
+      - OPENSEARCH_HOST=opensearch-node
+      - OPENSEARCH_USER=admin
+      - OPENSEARCH_PASS=admin
+    ports:
+      - "8000:8000"
 
   frontend:
     build:
       context: ./Test-Technique-Frontend
     depends_on:
       - backend
+    ports:
+      - "4173:4173"
 
 volumes:
   opensearch-data:

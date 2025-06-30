@@ -3,5 +3,5 @@
     url = https://github.com/sifer75/Test-Technique-Frontend
 
 [submodule "Test-Technique-backend"]
-    path = Test-Technique-backend
-    url = https://github.com/sifer75/Test-Technique-backend
+	path = Test-Technique-backend
+	url = https://github.com/sifer75/Test-Technique-backend
